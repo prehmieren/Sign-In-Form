@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300&display=swap" rel="stylesheet">
+    <title>เข้าสู่ระบบ</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Noto Sans Thai', sans-serif;
+            text-align: center;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+
+        }
+
+        .container {
+            width: 768px;
+            height: 480px;
+            max-width: 100%;
+            background-color: black;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            box-shadow: 0 14px 28px;
+            rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.22);
+        }
+
+        .signin {
+            flex: 1.5;
+            background-color: white;
+        }
+
+        .signup {
+            flex: 1;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1a1a1d;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 48px;
+            font-size: 45px;
+            color: #1a1a1d;
+        }
+
+        .login-text {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #1a1a1d;
+        }
+
+        #newuser,
+        #register-text {
+            color: white;
+        }
+
+        #register-text {
+            font-size: 16px;
+        }
+
+        #login-btn {
+            width: 248px;
+            background: linear-gradient(to right, #6f2232, #950740);
+            border: none;
+            height: 48px;
+            border-radius: 24px;
+            color: white;
+            letter-spacing: .5px;
+            transition: 0.25s;
+            margin-top: 36px;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        #login-btn:active {
+            transform: scale(0.98)
+        }
+
+        #forgot-password {
+            font-weight: bold;
+
+        }
+
+        #forgot-password:hover {
+            border-bottom: solid 2px;
+            cursor: pointer;
+            color: #c3073f;
+        }
+
+        #pw-forget-section {
+            margin-top: 24px;
+        }
+
+        button[type="submit"] {
+            background-color: transparent;
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+            border-radius: 32px;
+            width: 130px;
+            height: 48px;
+            border: solid 2px #950740;
+            cursor: pointer;
+            padding: 12px 28px;
+            margin-bottom: 68px;
+            transition: 0.2s;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #950740;
+
+        }
+
+        button[type="submit"]:active {
+            transform: scale(0.93)
+        }
+
+        input {
+            border: none;
+            width: 248px;
+            border-bottom: 1px solid #1a1a1d;
+            background-color: transparent;
+            height: 36px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="signin">
+            <div>
+                <h1>เข้าสู่ระบบ</h1>
+                <p class="login-text">อีเมล</p>
+                <input type="email">
+                <p class="login-text">รหัสผ่าน</p>
+                <input type="password"><br>
+                <button id="login-btn">SIGN IN</button>
+            </div>
+            <div id="pw-forget-section"><a id="forgot-password">ลืมรหัสผ่าน ?</a></div>
+        </div>
+        <div class="signup">
+            <div>
+                <h1 id="newuser">ผู้ใช้งานใหม่</h1>
+                <p id="register-text">สมัครสมาชิกและเริ่มต้นไปด้วยกันกับเรา <br>พร้อมรับสิทธิประโยชน์มากมาย</p>
+            </div>
+            <button type="submit">สมัครสมาชิก</button>
+
+        </div>
+    </div>
+</body>
+
+</html>
